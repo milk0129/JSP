@@ -3,53 +3,22 @@
 프론트엔드와 백엔드를 연결하여 구현한 JSP 기반의 개인 가계부 관리 웹 애플리케이션입니다.  
 사용자는 회원가입 및 로그인 후, 지출 내역을 입력/수정/조회할 수 있습니다.
 
-## 📁 프로젝트 구조
+## 📁 프로젝트 폴더 구조
 
-src/
-└── main/
-    ├── java/
-    │   ├── common/
-    │   │   └── commonPro/
-    │   │       ├── DbClose.java
-    │   │       └── DbSet.java
-    │   ├── memJSP/
-    │   └── proJSP/
-    │       ├── ExpenseDAO.java
-    │       ├── ExpenseDTO.java
-    │       ├── UserDAO.java
-    │       └── UserDTO.java
-    │
-    └── webapp/
-        └── book01JSP/
-            └── JspPro/
-                └── Jsp/
-                    ├── css/
-                    │   ├── HistoryCss.css
-                    │   ├── loginstyle.css
-                    │   ├── mainCss.css
-                    │   ├── mainMenu.css
-                    │   └── outline.css
-                    │
-                    ├── historyJsp/
-                    │   ├── historyAdd.html
-                    │   ├── historyDelete.html
-                    │   └── historyUpdate.html
-                    │
-                    ├── img/
-                    ├── jas/
-                    │   └── historyJas.js
-                    │
-                    ├── mainJsp/
-                    │   ├── home.jsp
-                    │   ├── index.jsp
-                    │   ├── mainAfter.html
-                    │   └── outline.html
-                    │
-                    └── userJsp/
-                        ├── find-id.jsp
-                        ├── login.jsp
-                        └── signUp.jsp
-                        
+- `src/main/java/common/commonPro/`  
+  - DB 설정 관련 클래스 (`DbSet.java`, `DbClose.java` 등)
+
+- `src/main/java/proJSP/`  
+  - DAO 및 DTO 클래스 (`UserDAO`, `ExpenseDAO`, `UserDTO`, `ExpenseDTO`)
+
+- `src/main/webapp/book01JSP/JspPro/Jsp/`  
+  - 프론트 리소스 모음
+    - `css/`: 스타일 시트
+    - `historyJsp/`: 지출 내역 관련 HTML
+    - `mainJsp/`: 메인 페이지 관련 JSP
+    - `userJsp/`: 로그인, 회원가입 관련 JSP
+    - `jas/`: JS 파일
+               
 ## ⚙️ 사용 기술
 
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
