@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<nav>
+  <img src="../Img/logo.jpg" />
+  <ul>
+    <li><a href="mainHtml/outline.html#home" onclick="loadPage('outline.jsp')">홈</a></li>
+    <li><a href="mainHtml/outline.html#gaeyo" onclick="loadPage('gaeyo.jsp')">개요</a></li>
+    <li><a href="userHtml/signUp.html" onclick="loadPage('signup.jsp')">회원가입</a></li>
+    <li><a href="userHtml/login.html" onclick="loadPage('login.jsp')">로그인</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

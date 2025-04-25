@@ -1,0 +1,112 @@
+/* <div> 레이아웃 */
+#wrapper{
+    width:1340px; 
+    margin:auto;
+    border:1px solid green;
+}
+/* ----------------------------------------- */
+/* 헤더 */
+header {    
+    float:left;
+    width:100%;
+    padding-top:20px;
+    /*border:1px solid black;*/
+    border-bottom:none;
+    background-color:rgb(209, 254, 192);
+}
+
+/* 메뉴 */
+nav {
+    width:95%;
+    margin:auto;    
+    height:60px;
+}
+
+/* li를 감싸는 요소 */
+ul {
+    list-style:none;
+    float:right;
+}
+
+/* 홈, 개요, 회원가입 */
+li {
+    display:inline-block;
+    width:80px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* 링크 */
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* mouseOver */
+li a:hover {
+    cursor: pointer;
+}
+
+/* mouseOver */
+li:hover {
+    background-color: lightgreen;
+    padding:5px 0px;
+    border-radius:20px;
+    width:80px;
+
+}
+
+/* 로그인 후 유저 ID 보이는 영역에 mouseOver */
+.afterLogin:hover {
+    background-color:rgb(209, 254, 192);
+}
+
+/* 메뉴 아래에 개요 등 파일이이 보일 프레임 */
+.iframe {
+    height:900px;
+    border:none;
+    width:100%;
+}
+
+/* 로고 이미지 */
+img {
+    width:100px;
+    height:50px;
+    float:left;
+}
+
+/* 로그인 버튼 */
+button {
+    border-radius: 20px;
+    width:80px;
+    padding:5px;
+    margin: 5px 0px 5px 20px;
+    background-color: rgb(0,92,5);
+    border:none;
+    color:lightgreen;
+    font-size: 15px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    cursor : pointer;
+}
+
+/* 로그인 버튼에 mouseOver */
+button:hover {
+    cursor: pointer;
+}
+
+/* 메뉴 아래 프레임과 구분 위한 영역 */
+.gubunsun {
+    clear:both;
+    width:100%;
+    height:10px;
+    /*border:1px solid black;*/
+    background-color:rgb(0,92,5);
+}
+/* hr을 영역을 보존한 채 숨김 처리 */
+.visible {
+    visibility: hidden;
+}

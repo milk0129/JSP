@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>historyDelete.html</title>
+  <link rel="stylesheet" href="./../css/HistoryCss.css">
+ </head>
+ <body onload ="mInit()">
+<script src="./../Jas/historyjas.js"></script>	
+ <div id = "wrapper">
+ <form>
+	<table>
+		<thead>
+			<tr>
+				<th><a href = "./historyAdd.html">내역 기입</a></th>
+				<th><a href = "./historyDelete.html" class = "recent">내역 수정</a></th>
+				<th><a href = "./historyUpdate.html">내역 확인</a></th>
+				<td class = "invisible"></td>
+				<td class = "invisible">
+					<input type="button" id = "bank" class = "button01" value = "입금" onclick = "mMoney()">
+					<input type="button" id = "calander" class = "button02" value = "엑셀" onclick = "mShow()">
+				</td>
+			</tr>
+			<tr>
+				<td>날짜</td>
+				<td>입금</td>
+				<td>금액</td>
+				<td>카테고리</td>
+				<td>메모</td>
+			</tr>
+			<tr>
+				<td><input type="date" class = "date" id = "mdate" placeholder = "YY-MM-DD" required></td>
+				<td><input type="text" class = "text" id = "minput" placeholder = "네이버" required></td>
+				<td><input type="text" class = "text" id = "mmoney" placeholder = "3,000,000" required></td>
+				<td><input type="text" class = "text" id = "mcategory" placeholder = "급여" required></td>
+				<td><input type="text" class = "text" id = "mmemo" placeholder = "첫 월급!" required></td>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+			<td colspan = "4" class = "invisible"></td>
+			<td class = "invisible">
+				<input type="button" class = "button01" value = "취소" onclick = "mReset()">
+				<input type="button" class = "button02" value = "저장">
+			</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+	<p id = "demo"></p>
+  </div>
+ </body>
+</html>

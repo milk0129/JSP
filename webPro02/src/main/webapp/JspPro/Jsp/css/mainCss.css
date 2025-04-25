@@ -1,0 +1,90 @@
+/* <div> 레이아웃 */
+#wrapper{
+    width:1340px; 
+    margin:auto;
+    border: 3px solid black;
+}
+/* ----------------------------------------- */
+table, td,tr{
+    border-collapse: collapse;
+    border:2px solid black;
+    width:100%;
+}
+
+/* 메뉴 아래 영역 */
+td {
+    height: 20px;
+}
+
+/* iframe */
+.iframe{
+    width:100%;
+    height:500px;
+    padding-left: 5px;
+    border:none;
+}
+
+.iframeContent {
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* 메뉴 */
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+ul.rightMenu{
+    margin-left: 540px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border:2px solid black;
+}
+
+img.logoImg{
+    display: inline-block;
+    width:150px;
+    height:50px;
+    margin-top: 5px;
+    
+    font-size: 30px;
+    border:2px solid black;
+}
+
+ul.leftMenu{
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    border:2px solid black;
+    margin-bottom: 15px;
+}
+
+/* 메뉴 리스트 */
+li.menuList {
+    display: inline-block;
+    width:150px;
+    height:50px;
+    text-align:center;
+    margin-top: 5px;
+    
+    font-size: 30px;
+    border:2px solid black;
+}
+
+
+/* 로그인 버튼 */
+li.loginBtn {
+    display: inline-block;
+    font-size: 30px;
+    width:250px;
+    height:50px;
+    text-align:center;
+    border:2px solid black;
+    border-radius: 50px;
+    background-color : white;
+}
