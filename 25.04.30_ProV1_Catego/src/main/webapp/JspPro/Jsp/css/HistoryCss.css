@@ -1,0 +1,276 @@
+body{
+    background-color: #f4f4f4;
+}
+
+#wrapper{
+	width : 1200px;
+	height: 700px;
+	margin : auto;
+	margin-top: 50px;
+	padding : 25px;
+	background-color : white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+p.mainTitle{		/*가계부 메인 타이틀*/
+	text-indent : 30px;
+	font-size : 36px;
+	font-weight : bold;
+	color : #242424;
+	padding: 0;
+	margin: 20px 0px 40px 10px;
+}
+
+
+div.monthDiv{	/*달력 영역*/
+	margin-left: 35px;
+	border:none;
+}
+#month {			/* 월 */
+	font-size : 24px;
+	font-weight : bold;
+	margin-left: 3px;
+	color : #242424;
+}
+input.monthButton{	/* 달력 - 이전, 다음 버튼 */
+	border: none;
+	background-color: white;
+	font-size : 20px;
+	cursor: pointer;
+	color : #242424;
+}
+
+
+div.linkMenu{		/* 메뉴 */
+	float: right;
+	margin-right : 25px;
+	margin-top: 18px;
+}
+a{	/*linkMenu 및 SelTable 수정, 삭제 */
+	text-decoration: none;
+	cursor: pointer;
+	color : gray;
+	margin-left: 5px;
+}
+a:hover{
+	color: #242424;
+	transition : 0.3s ease;
+}
+
+img{		/* 삭제 예정 */
+	float : left;
+	margin : 50px;
+}
+
+p.tableTitle{
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: -35px;
+	margin-left : 685px;
+}
+
+table{	/* 테이블은 공통으로 가져가기 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid lightgray;
+    border-radius: 10px;
+	width : 500px;
+	margin : -10px 0px 25px 680px; 
+}
+th {
+	height : 50px;	
+}
+/*selTable*/
+.selTable .mItem{
+	font-weight : bold;
+	font-size : 20px;
+	text-indent : 10px;
+	padding-left : 12px;
+	padding-bottom:12px;
+}
+.selTable .mOutcome, .selTable .mIncome{
+	font-weight : bold;
+	font-size : 20px;
+	text-align: right;
+	padding-top :0;
+	padding-bottom:12px;	
+}
+.selTable .mOutcome{
+	color : #FF3333;
+}
+.selTable .mIncome{
+	color : #3333FF;
+}
+.linkUpdDel{
+	width: 22%;
+	text-align : right;
+	padding-right : 25px;
+	padding-bottom:12px;	
+}
+.selTable .mDate{
+	color : gray;
+	font-size : 15px;
+	text-indent: 12px;
+	text-align : left;
+	padding: 15px 10px 0px 10px;
+}
+hr{
+	width: 95%;
+	margin-top : 15px;
+	border: none;
+	background-color: lightgray;
+	height :2px;
+}
+
+.addTable td:first-child, .updTable td:first-child {
+	width :150px;
+}
+input[type="text"], input[type="date"]{
+	width : 90%;
+	height : 30px;
+	font-size: 16px;
+	font-family : sans-serif;
+}
+label{
+	display : inline-block;
+	width: 100px;
+	position : relative;
+	font-weight: bold;
+	font-size : 18px;
+	padding : 20px 10px;
+	text-indent : 10px;
+
+}
+label::after{
+	position: absolute;
+	right: 0px;
+	content: "|";
+}
+
+.delTable td:first-child{	/* 체크박스 */
+	
+	text-align: center;
+	width: 70px;
+}
+.delTable td:nth-child(2){	/* 날짜 */
+	text-align: center;
+	width: 100px;
+}
+.delTable td:last-child{	/* 금액 */
+	text-align: center;
+	width: 140px;
+}
+.delTable tr:last-child td{
+	padding-bottom: 10px;	
+}
+.delTable .mDate{
+	text-align : center;
+	width: 100px;	
+}
+.delTable .mItem, .delTable .mOutcome, .delTable .mIncome{
+	text-align : center;
+	font-weight :  bold;	
+}
+.delTable .mOutcome{
+	color : #FF3333;
+}
+.delTable .mIncome{
+	color : #3333FF;
+}
+
+.incomeButton, .outcomeButton{
+	font-size: 18px;
+	font-weight: bold;
+	width : 42%;
+	height: 35px;
+	margin-right: 18px;
+	margin-top: 3px;
+	background-color : #EEEEEE;
+	line-height : 35px;
+	
+}
+.incomeButton:hover {	background-color:skyblue; }
+.outcomeButton:hover{ 	background-color:pink; }
+
+.saveButton, .trashButton{
+	height : 50px;
+	margin: 15px;
+	line-height: 45px;
+	font-size: 24px;
+	font-weight :bold;
+	margin-top: 5px;
+}
+
+.saveButton{
+	width: 75%;
+	margin-right: 5px;
+	background-color : lightgreen;
+}
+.trashButton{
+	width: 15%;
+	margin-left: 3px;
+	text-indent: 2px;
+	background-color: #BBBBBB;
+}
+.incomeButton, .outcomeButton, .saveButton, .trashButton{
+	border : none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+	cursor:pointer;
+}
+
+.incomeButton:hover, .outcomeButton:hover, .saveButton:hover, .trashButton:hover{
+	text-shadow: -2px -2px white, 2px -2px white, -2px 2px white, 2px 2px white, -2px 0px white, 2px 0px white, 0px -2px white, 0px 2px white;
+	box-shadow: 3px 3px 3px lightgray;
+	transition : 0.3s ease;
+}
+
+.buttonWrapper {
+    margin-left: 690px; 
+    margin-top: 20px;
+    width: 500px;
+    display: flex;       
+    justify-content: space-between; 
+}
+div.buttonWrapper .saveButton{
+	margin-left: 3px;
+}
+
+
+select {
+    display: inline-block;
+    width: 93%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #343434;
+    margin: 18px 0px 5px 14px;
+    padding: 3px;
+    float : right;
+}
+
+.updTable select, .addTable select{
+    margin: 3px 5px 0px -5px;
+}
+
+.delTable select{
+	margin: 18px 0px 5px -8px;
+	padding : 3px;	
+	float : right;
+}
+.delTable hr{
+	margin-bottom: -3px;	
+}
+
+option {
+	font-size : 12px;
+	font-weight: bold;
+	color : #343434;
+}
+
+td.mCategory {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding-bottom: 10px;
+}
